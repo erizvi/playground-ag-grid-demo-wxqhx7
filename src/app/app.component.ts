@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
       field: 'price',
       sortable: true,
       filter: true,
-      cellEditorFramework: SelectEditor,
+      cellEditorFramework: SelectEditor, // can be same as cellEditor https://stackoverflow.com/a/49889932
       cellEditorParams: {},
       valueFormatter: (params) => `$${params.value}`,
     },
